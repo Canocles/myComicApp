@@ -1,13 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+// Components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 
+// Routes
+import { AppRoutes } from './app.routes';
+
+// Services
 
 @NgModule({
   declarations: [
@@ -18,7 +22,8 @@ import { HeroesComponent } from './components/heroes/heroes.component';
     HeroesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutes
   ],
   providers: [],
   bootstrap: [AppComponent]
