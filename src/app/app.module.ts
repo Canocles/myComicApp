@@ -10,6 +10,7 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 
 // Routes
 import { AppRoutes } from './app.routes';
+import { HeroesService } from './services/heroes.service';
 
 // Services
 
@@ -25,7 +26,7 @@ import { AppRoutes } from './app.routes';
     BrowserModule,
     AppRoutes
   ],
-  providers: [],
+  providers: [HeroesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
