@@ -11,8 +11,10 @@ import { HeroesService } from '../../../services/heroes.service';
 })
 export class HeroComponent implements OnInit {
   hero: Hero;
+
   constructor(public heroesService: HeroesService,
               private route: ActivatedRoute) {
+                
     this.route.params
       .subscribe(
         ( params => {
