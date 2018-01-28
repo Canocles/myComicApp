@@ -2,13 +2,16 @@
 <hr>
 <div class="card-columns">
   
-    <div class="card w3-hover-shadow">
-      <a style="cursor: pointer;">
-        <img class="card-img-top img-fluid" style="max-height: 400px" src="assets/images/ironman.png" alt="Card image cap">
+    <div class="card w3-hover-shadow animated fadeIn fast"
+      *ngFor="let hero of heroes; let i = index">
+      <a style="cursor: pointer;"
+        (click)="getHero(i)">
+        <img class="card-img-top img-fluid" 
+          style="max-height: 400px" [src]="hero.img" [alt]="hero.nombre">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h5 class="card-title">{{ hero.nombre }}</h5>
+          <p class="card-text">{{ hero.bio }}</p>
+          <p class="card-text"><small class="text-muted">{{ hero.aparicion }}</small></p>
         </div>
       </a>
     </div>

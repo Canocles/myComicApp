@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Hero } from '../components/heroes/hero.model';
+import { Hero } from '../components/heroes/hero/hero.model';
 
 @Injectable()
 export class HeroesService {
@@ -56,7 +56,6 @@ export class HeroesService {
   ];
 
   constructor() {
-    console.log('Servicio listo para ser usado');
   }
 
   getHeroes() {

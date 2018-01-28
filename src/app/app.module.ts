@@ -11,6 +11,7 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 // Routes
 import { AppRoutes } from './app.routes';
 import { HeroesService } from './services/heroes.service';
+import { HeroComponent } from './components/heroes/hero/hero.component';
 
 // Services
 
@@ -20,7 +21,8 @@ import { HeroesService } from './services/heroes.service';
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
