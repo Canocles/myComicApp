@@ -5,7 +5,6 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroComponent } from './components/heroes/hero/hero.component';
-import { SearchComponent } from './components/heroes/search/search.component';
 
 const ROUTES: Routes = [
     {
@@ -22,7 +21,7 @@ const ROUTES: Routes = [
     },
     {
         path: 'heros/search/:name',
-        component: SearchComponent
+        component: HeroesComponent
     },
     {
         path: 'heros/:id',
