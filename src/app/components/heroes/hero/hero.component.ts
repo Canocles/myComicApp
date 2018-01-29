@@ -19,7 +19,6 @@ export class HeroComponent implements OnInit {
       .subscribe(
         ( params => {
           this.hero = this.heroesService.getHero(+params['id']);
-          console.log(this.hero);
         })
       );
   }
