@@ -20,10 +20,6 @@ const ROUTES: Routes = [
         component: HeroesComponent
     },
     {
-        path: 'heros/search/:name',
-        component: HeroesComponent
-    },
-    {
         path: 'heros/:id',
         component: HeroComponent
     },

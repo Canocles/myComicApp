@@ -35,4 +35,8 @@ export class HeroesComponent implements OnInit {
   getHero(id: number) {
     this.router.navigate([`/heros/${id}`]);
   }
+
+  searchHeroByName() {
+    this.heroes = this.heroesService.searchHeroByName(this.name);
+  }
 }

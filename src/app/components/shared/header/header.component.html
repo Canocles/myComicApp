@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">
-    <img src="/assets/img/A-64.png" width="30" height="30" alt="">
+    <img src="assets/img/logo.png" width="30" height="30" alt="">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -18,9 +18,5 @@
         <a class="nav-link" routerLink="about">Sobre Nosotros</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0" onSubmit="return false;">
-      <input class="form-control mr-sm-2" type="text" placeholder="Buscar héroe" (keyup.enter)="searchHeroByName(searchName.value)" #searchName>
-      <button class="btn btn-outline-primary my-2 my-sm-0" type="button" (click)="searchHeroByName(searchName.value)">Buscar</button>
-    </form>
   </div>
 </nav>

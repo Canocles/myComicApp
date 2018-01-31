@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 // Components
 import { AppComponent } from './app.component';
@@ -26,7 +27,8 @@ import { HeroComponent } from './components/heroes/hero/hero.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutes
+    AppRoutes,
+    FormsModule
   ],
   providers: [HeroesService],
   bootstrap: [AppComponent]

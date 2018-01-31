@@ -1,12 +1,13 @@
 <h1>Heroes y Villanos de <small>Marvel y DC</small></h1>
 <hr>
 
-<div class="alert alert-danger alert-dismissible fade show" role="alert" *ngIf="heroes.length === 0">
-    <strong>No existen</strong> héroes o villanos que cumplan con los criterios de búsqueda.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
+<div class="input-group bottom30">
+  <div class="input-group-prepend">
+    <span class="form-control-lg input-group-text" id=""><span class="fas fa-search"></span></span>
   </div>
+  <input class="form-control form-control-lg width" type="text" placeholder="Buscar personaje por nombre..."
+    (keyup)="searchHeroByName()" [(ngModel)]="name">
+</div>
 
 <div class="card-columns">  
     <div class="card w3-hover-shadow animated fadeIn fast"
